@@ -1,0 +1,22 @@
+
+ALGORITHM Insertion_sort
+VAR
+    arr : ARRAY_OF INTEGER [];
+    i,n,key: INTEGER := 0 ;
+BEGIN
+
+    write("Please enter the array");
+    Read (arr);
+    FOR i FROM 0 TO arr.length STEP 1  DO
+        j = i-1;
+        key:=arr[i]
+        WHILE (j>=0 and arr[j]>key) DO
+            arr[j+1] = arr[j]
+            j = j-1
+        END_WHILE
+        arr[j+1]=key
+    END_FOR
+
+
+END
+
